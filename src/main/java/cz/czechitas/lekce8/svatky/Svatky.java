@@ -59,7 +59,7 @@ public class Svatky {
   public Stream<String> muzi() {
     return seznamSvatku()
             .filter(svatek -> svatek.getGender().equals(Gender.MUZ))
-            .map (svatek -> svatek.getJmeno());
+            .map(Svatek::getJmeno);
   }
 
   /**
